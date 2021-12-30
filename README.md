@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>📽︎Movie App📽︎</h1>
+ <h4>영화 API를 활용한 React 기반의 웹 사이트 입니다.</h4>
+  </div>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/83646986/147746872-213bd972-c1c0-4e75-8999-6243df2cd80f.gif" width="500" />
+</div>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💪 Skills
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+ 
+      
+<br/>
 
-## Available Scripts
+## 📝 About The Project
+> 이 프로젝트는 React를 공부하던 중 직접 프로젝트를 만들며 공부를 하면 효과가 확실히 있겠다는 생각에 기획되었으며, <br>API를 활용하여 인기있는 영화를 보여주고, 검색할 수 있으며, 영화에 대한 정보를 제공하는 것이 주요 기능입니다.
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## 👨‍💻 Tech stack
+다음은 이 프로젝트가 채택한 기술 스택에 대한 간략한 개요입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 이 프로젝트는 JavaScript 기반의 React 라이브러리를 사용합니다.
+  - React는 SPA를 위한 사용자 인터페이스를 구축하는데 사용되는 Javascript 라이브러리입니다.
+- 컴포넌트 스타일링을 위해 CSS-in-JS 라이브러리인 styled-components를 사용합니다.
+- React Hook을 사용합니다.
+   - useState() : 상태를 관리할 때 필요한 함수이다.
+   - useEffect() : 렌더링 직후 작업을 설정하는 기능을 제공하는 함수이다.
+   - useRef() : 함수형 컴포넌트에서 돔 요소에 접근할 수 있다.
+   - useCallback() : React의 렌더링 성능을 위해 제공되는 훅이다.
+   - useContext() : props를 일일이 넘겨주지 않고도 컴포넌트 트리 전체에서 데이터를 사용할 수 있다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
+     
+## ✔︎ What to do?
 
-### `npm test`
+- useState를 통해 컴포넌트의 상태(동적인 값)를 관리한다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Props를 통해 상위 컴포넌트에서 하위 컴포넌트에게 값을 전달한다.
 
-### `npm run build`
+- state를 변경하면 모든 코드들은 다시 실행된다. 특정 코드를 한 번만 실행시키기 위해 useEffect를 사용한다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 페이지 이동을 위해 React Router를 사용한다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 영화 API에서 필요한 데이터를 fetch하고, 받아온 데이터를 async/await을 사용하여 연결한다.
+- PropTypes를 사용하여 Props의 유효성 검사를 한다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- sessionStorage API를 사용하여 데이터를 저장한다.
